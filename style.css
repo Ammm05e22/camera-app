@@ -1,0 +1,247 @@
+body {
+    margin: 0px;
+    background-color: rgb(255 255 255);
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+    height: 11%;
+    display: flex;
+    justify-content: space-between;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.body{
+    height: 89%;
+    display: flex;
+}
+.footer{
+    height: 10%;
+}
+
+.nav{
+    display: flex;
+}
+.screen{
+    width: 71%;
+    background-color: rgb(233, 233, 233);
+    overflow: scroll;
+}
+
+.nav div{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 19px;
+}
+
+.profile{
+    align-items: center;
+    display: flex;
+    margin-right: 42px;
+}
+
+h1{
+    margin:0px;
+}
+
+.logo{
+    padding:10px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.logo h5{
+    text-align: center;
+    width: 4%;
+    margin-left:10px;
+}
+
+.left_side{
+    width: 18%;
+}
+
+.post{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 17em;
+}
+
+.post img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.box_9{
+    --auto-grid-min-size: 16rem;
+    display: grid;
+    grid-gap: 1.3rem;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+}
+
+
+.login_box{
+    display: flex;
+    justify-content: center;
+    height: 33vh;
+}
+
+.submit {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.submit button {
+    max-width: 400px;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #3c3a3a;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.form_action {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.login {
+    height: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
+}
+
+.no_border{
+    border: none !important;
+}
+
+
+.login input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid;
+    background-color: rgb(255 255 255 / 31%);
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #3c3a3a;
+    cursor: pointer;
+    min-height: 40px;
+}
+
+
+.login button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(255 255 255 / 31%);
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 20px 0 40px;
+    box-shadow: 0 0 0 2px rgba(134, 140, 160, 0.02);
+    margin-bottom: 20px;
+    color: #3c3a3a;
+    cursor: pointer;
+}
+
+.login input::-moz-placeholder {
+    font-family: var(--body-font);
+    color: var(--inactive-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.login input:-ms-input-placeholder {
+    font-family: var(--body-font);
+    color: var(--inactive-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.login input::placeholder {
+    font-family: var(--body-font);
+    color: var(--inactive-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.background{
+    position: absolute;
+    left: 0px;
+    top: -127px;
+    z-index: -1;
+}
+
+.background g{
+    fill: #212121;
+}
+
+
+
+
+
+#camera, #camera--view, #camera--sensor, #camera--output{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#camera--view, #camera--sensor, #camera--output{
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+#camera--trigger{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 30px;
+    left: calc(50% - 100px);
+}
+.taken{
+    height: 100px!important;
+    width: 100px!important;
+    transition: all 0.5s ease-in;
+    border: solid 3px white;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
